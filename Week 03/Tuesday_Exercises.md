@@ -1,79 +1,96 @@
+Here are **10 practical exercises** on NumPy and Pandas, structured into separate blocks clearly for your class:
 
-## 📝 **Exercise 1: Declare variables**
+---
 
-* Declare 3 variables: `name`, `age`, and `school`.
-* Print them to the screen in the following format:
+## 📗 **NumPy Exercises**
 
+---
+
+### 📝 **Exercise 1: Basic NumPy Array**
+
+* Create a NumPy array containing numbers from **1 to 10**.
+* Print the array and its data type.
+
+---
+
+### 📝 **Exercise 2: Array Operations**
+
+* Create a NumPy array of numbers from **10 to 20**.
+* Calculate and print the sum, average, maximum, and minimum values.
+
+---
+
+### 📝 **Exercise 3: NumPy Array Slicing**
+
+* Create a NumPy array with numbers **from 1 to 20**.
+* Print all even numbers in the array.
+
+---
+
+### 📝 **Exercise 4: NumPy Array Reshape**
+
+* Create a NumPy array containing numbers from **1 to 12**.
+* Reshape this array into a **3x4 matrix** and print it.
+
+---
+
+### 📝 **Exercise 5: NumPy Random Numbers**
+
+* Create a NumPy array of **5 random integers between 1 and 100**.
+* Print this array and also print its highest and lowest numbers.
+
+---
+
+## 📙 **Pandas Exercises**
+
+---
+
+### 📝 **Exercise 6: Create Basic DataFrame**
+
+* Create a Pandas DataFrame with these columns:
+
+  * `Name`: \['Anna', 'Bob', 'Charlie']
+  * `Age`: \[25, 30, 35]
+  * `Country`: \['UK', 'USA', 'Canada']
+* Print the DataFrame.
+
+---
+
+### 📝 **Exercise 7: Basic DataFrame Info**
+
+* Using the DataFrame from Exercise 6:
+
+  * Print basic information about the DataFrame using `.info()`.
+  * Print the first 2 rows using `.head()`.
+
+---
+
+### 📝 **Exercise 8: Filter DataFrame**
+
+* Create a DataFrame with columns `Product`, `Price`, and `Quantity`.
+* Filter and print products with a price **greater than 50**.
+
+---
+
+### 📝 **Exercise 9: CSV Reading & Writing**
+
+* Create a DataFrame with 3 students (`Name` and `Score`).
+* Write this DataFrame to a CSV file named `"students.csv"`.
+* Read the CSV file again into a new DataFrame and print it.
+
+---
+
+### 📝 **Exercise 10: Data Cleaning**
+
+* Create a DataFrame with some missing values:
+
+```python
+data = {
+  'Name': ['Anna', None, 'Charlie'],
+  'Age': [25, None, 35],
+  'Country': ['UK', 'USA', None]
+}
 ```
-"My name is [name], I'm [age] years old, studying at [school]."
-```
 
----
-
-## 📝 **Exercise 2: Basic arithmetic**
-
-* Create two numbers: `a = 15`, `b = 4`.
-* Print the results of these operations:
-
-  * Addition, subtraction, multiplication, division, modulo, and exponentiation.
-
----
-
-## 📝 **Exercise 3: Basic list**
-
-* Create a list containing your 5 favorite cities.
-* Print each city individually from the list.
-
----
-
-## 📝 **Exercise 4: Simple dictionary**
-
-* Create a dictionary containing your personal information: `full name`, `age`, `gender`, and `nationality`.
-* Print the information in the format:
-
-```
-Full name: ...
-Age: ...
-Gender: ...
-Nationality: ...
-```
-
----
-
-## 📝 **Exercise 5: Check positive, negative or zero**
-
-* Write a program to input a number.
-* Check if the number is positive, negative, or zero and print the result clearly.
-
----
-
-## 📝 **Exercise 6: Check divisibility by 2 and 5**
-
-* Input any number.
-* Check if the number is divisible by both 2 and 5, then print the appropriate result.
-
----
-
-## 📝 **Exercise 7: Print odd numbers**
-
-* Write a program using a `for` loop to print all odd numbers from 1 to 30.
-
----
-
-## 📝 **Exercise 8: Sum of even numbers**
-
-* Calculate the sum of all even numbers from 1 to 100 and print the result.
-
----
-
-## 📝 **Exercise 9: Calculate average grade**
-
-* Write a function that receives three grades (Math, Physics, Chemistry) and calculates the average.
-* Print the average grade rounded to two decimal points.
-
----
-
-## 📝 **Exercise 10: Century check**
-
-* Write a function that checks whether your birth year belongs to the 21st century (year 2001 onwards).
-* Return `"21st Century"` or `"Before 21st Century"` accordingly.
+* Replace all missing values with `"Unknown"` or average age for numeric values.
+* Print the cleaned DataFrame.
